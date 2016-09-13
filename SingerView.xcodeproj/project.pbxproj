@@ -48,8 +48,6 @@
 		21972A35C71346ACC739E62D /* Pods-SingerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingerView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SingerView/Pods-SingerView.debug.xcconfig"; sourceTree = "<group>"; };
 		4E23F1CEC9036246B1636241 /* Pods_SingerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		578D20BFA164388323BA072E /* Pods-SingerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingerView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SingerView/Pods-SingerView.release.xcconfig"; sourceTree = "<group>"; };
-		7817BA031D7995A40003D368 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
-		7817BA051D7995A40003D368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		782FFD221D868722001C03A5 /* DWPathView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWPathView.swift; sourceTree = "<group>"; };
 		7883E6BE1D75214C00F2E51D /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		789233CE1D87975E00C2F608 /* DWView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWView.swift; sourceTree = "<group>"; };
@@ -86,20 +84,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7817BA021D7995A40003D368 /* SinterKeyBoard */ = {
-			isa = PBXGroup;
-			children = (
-				7817BA031D7995A40003D368 /* KeyboardViewController.swift */,
-				7817BA051D7995A40003D368 /* Info.plist */,
-			);
-			path = SinterKeyBoard;
-			sourceTree = "<group>";
-		};
 		78E0F10E1D62CB6400B42D75 = {
 			isa = PBXGroup;
 			children = (
 				78E0F1191D62CB6400B42D75 /* SingerView */,
-				7817BA021D7995A40003D368 /* SinterKeyBoard */,
 				78E0F1181D62CB6400B42D75 /* Products */,
 				CA7A79905F8E822DAE997231 /* Pods */,
 				19FFFCC3DF378695215B6075 /* Frameworks */,
