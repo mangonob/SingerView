@@ -7,14 +7,55 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		782FFD231D868722001C03A5 /* DWPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782FFD221D868722001C03A5 /* DWPathView.swift */; };
+		789233CF1D87975E00C2F608 /* DWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789233CE1D87975E00C2F608 /* DWView.swift */; };
+		789233D91D87BFD600C2F608 /* DWPathLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789233D81D87BFD600C2F608 /* DWPathLayer.swift */; };
+		789233DD1D87D46600C2F608 /* DWNodeFrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789233DC1D87D46600C2F608 /* DWNodeFrameManager.swift */; };
+		78CB42BD1D75734B00B9D88B /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 78CB42BC1D75734B00B9D88B /* setting.png */; };
 		78E0F11B1D62CB6400B42D75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E0F11A1D62CB6400B42D75 /* AppDelegate.swift */; };
 		78E0F11D1D62CB6400B42D75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E0F11C1D62CB6400B42D75 /* ViewController.swift */; };
 		78E0F1201D62CB6500B42D75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78E0F11E1D62CB6500B42D75 /* Main.storyboard */; };
 		78E0F1221D62CB6500B42D75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78E0F1211D62CB6500B42D75 /* Assets.xcassets */; };
 		78E0F1251D62CB6500B42D75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78E0F1231D62CB6500B42D75 /* LaunchScreen.storyboard */; };
+		78FA9DC41D828B89007503C2 /* DWNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA9DC31D828B89007503C2 /* DWNodeView.swift */; };
+		DAA484838FF575872A92291E /* Pods_SingerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E23F1CEC9036246B1636241 /* Pods_SingerView.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7817BA0F1D7995A40003D368 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7872FD0D1D6BE1110083195B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		21972A35C71346ACC739E62D /* Pods-SingerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingerView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SingerView/Pods-SingerView.debug.xcconfig"; sourceTree = "<group>"; };
+		4E23F1CEC9036246B1636241 /* Pods_SingerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		578D20BFA164388323BA072E /* Pods-SingerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingerView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SingerView/Pods-SingerView.release.xcconfig"; sourceTree = "<group>"; };
+		7817BA031D7995A40003D368 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		7817BA051D7995A40003D368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		782FFD221D868722001C03A5 /* DWPathView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWPathView.swift; sourceTree = "<group>"; };
+		7883E6BE1D75214C00F2E51D /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		789233CE1D87975E00C2F608 /* DWView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWView.swift; sourceTree = "<group>"; };
+		789233D81D87BFD600C2F608 /* DWPathLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWPathLayer.swift; sourceTree = "<group>"; };
+		789233DC1D87D46600C2F608 /* DWNodeFrameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWNodeFrameManager.swift; sourceTree = "<group>"; };
+		78CB42BC1D75734B00B9D88B /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
 		78E0F1171D62CB6400B42D75 /* SingerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E0F11A1D62CB6400B42D75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78E0F11C1D62CB6400B42D75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +63,7 @@
 		78E0F1211D62CB6500B42D75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		78E0F1241D62CB6500B42D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78E0F1261D62CB6500B42D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78FA9DC31D828B89007503C2 /* DWNodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWNodeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +71,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA484838FF575872A92291E /* Pods_SingerView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19FFFCC3DF378695215B6075 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E23F1CEC9036246B1636241 /* Pods_SingerView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7817BA021D7995A40003D368 /* SinterKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				7817BA031D7995A40003D368 /* KeyboardViewController.swift */,
+				7817BA051D7995A40003D368 /* Info.plist */,
+			);
+			path = SinterKeyBoard;
+			sourceTree = "<group>";
+		};
 		78E0F10E1D62CB6400B42D75 = {
 			isa = PBXGroup;
 			children = (
 				78E0F1191D62CB6400B42D75 /* SingerView */,
+				7817BA021D7995A40003D368 /* SinterKeyBoard */,
 				78E0F1181D62CB6400B42D75 /* Products */,
+				CA7A79905F8E822DAE997231 /* Pods */,
+				19FFFCC3DF378695215B6075 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +119,28 @@
 			children = (
 				78E0F11A1D62CB6400B42D75 /* AppDelegate.swift */,
 				78E0F11C1D62CB6400B42D75 /* ViewController.swift */,
+				789233CE1D87975E00C2F608 /* DWView.swift */,
+				78FA9DC31D828B89007503C2 /* DWNodeView.swift */,
+				789233DC1D87D46600C2F608 /* DWNodeFrameManager.swift */,
+				782FFD221D868722001C03A5 /* DWPathView.swift */,
+				789233D81D87BFD600C2F608 /* DWPathLayer.swift */,
+				7883E6BE1D75214C00F2E51D /* Bridge.h */,
 				78E0F11E1D62CB6500B42D75 /* Main.storyboard */,
 				78E0F1211D62CB6500B42D75 /* Assets.xcassets */,
+				78CB42BC1D75734B00B9D88B /* setting.png */,
 				78E0F1231D62CB6500B42D75 /* LaunchScreen.storyboard */,
 				78E0F1261D62CB6500B42D75 /* Info.plist */,
 			);
 			path = SingerView;
+			sourceTree = "<group>";
+		};
+		CA7A79905F8E822DAE997231 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				21972A35C71346ACC739E62D /* Pods-SingerView.debug.xcconfig */,
+				578D20BFA164388323BA072E /* Pods-SingerView.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +150,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 78E0F1291D62CB6500B42D75 /* Build configuration list for PBXNativeTarget "SingerView" */;
 			buildPhases = (
+				5E4757C1BC752557A5BC2341 /* [CP] Check Pods Manifest.lock */,
 				78E0F1131D62CB6400B42D75 /* Sources */,
 				78E0F1141D62CB6400B42D75 /* Frameworks */,
 				78E0F1151D62CB6400B42D75 /* Resources */,
+				7872FD0D1D6BE1110083195B /* Embed Frameworks */,
+				7817BA0F1D7995A40003D368 /* Embed App Extensions */,
+				A426E2BF1F057E7DA316F928 /* [CP] Embed Pods Frameworks */,
+				0184380F4A6D10AC18ED53B9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -125,10 +209,59 @@
 				78E0F1251D62CB6500B42D75 /* LaunchScreen.storyboard in Resources */,
 				78E0F1221D62CB6500B42D75 /* Assets.xcassets in Resources */,
 				78E0F1201D62CB6500B42D75 /* Main.storyboard in Resources */,
+				78CB42BD1D75734B00B9D88B /* setting.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0184380F4A6D10AC18ED53B9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SingerView/Pods-SingerView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E4757C1BC752557A5BC2341 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A426E2BF1F057E7DA316F928 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SingerView/Pods-SingerView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		78E0F1131D62CB6400B42D75 /* Sources */ = {
@@ -137,6 +270,11 @@
 			files = (
 				78E0F11D1D62CB6400B42D75 /* ViewController.swift in Sources */,
 				78E0F11B1D62CB6400B42D75 /* AppDelegate.swift in Sources */,
+				782FFD231D868722001C03A5 /* DWPathView.swift in Sources */,
+				789233CF1D87975E00C2F608 /* DWView.swift in Sources */,
+				78FA9DC41D828B89007503C2 /* DWNodeView.swift in Sources */,
+				789233D91D87BFD600C2F608 /* DWPathLayer.swift in Sources */,
+				789233DD1D87D46600C2F608 /* DWNodeFrameManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,23 +387,39 @@
 		};
 		78E0F12A1D62CB6500B42D75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21972A35C71346ACC739E62D /* Pods-SingerView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SingerView/CommonModule/GoogleMobileAdsSdkiOS",
+				);
 				INFOPLIST_FILE = SingerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mangonob.SingerView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SingerView/Bridge.h;
 			};
 			name = Debug;
 		};
 		78E0F12B1D62CB6500B42D75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 578D20BFA164388323BA072E /* Pods-SingerView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SingerView/CommonModule/GoogleMobileAdsSdkiOS",
+				);
 				INFOPLIST_FILE = SingerView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mangonob.SingerView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = SingerView/Bridge.h;
 			};
 			name = Release;
 		};
@@ -288,6 +442,7 @@
 				78E0F12B1D62CB6500B42D75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,25 +1,126 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="o6H-4V-xuG">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="5yE-8S-yhI">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="o6H-4V-xuG" customClass="ViewController" customModule="SingerView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="oy6-Ku-b9Q"/>
+                        <viewControllerLayoutGuide type="bottom" id="or1-7L-bFR"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="tYc-Gp-kVB">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uck-Ep-ODj" userLabel="Container One">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWb-xw-txu">
+                                        <rect key="frame" x="27" y="433" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="action:" destination="o6H-4V-xuG" eventType="touchUpInside" id="YKf-z6-zwe"/>
+                                        </connections>
+                                    </button>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kg9-Om-hsD" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="98" width="100" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.43745583295822144" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kz0-4z-F8T" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                        <rect key="frame" x="10" y="108" width="100" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aB5-3g-1kr" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="118" width="100" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Shu-9c-2Lt" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                        <rect key="frame" x="30" y="128" width="100" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tVM-KB-P2s" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="138" width="100" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OXR-9r-WS1" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                        <rect key="frame" x="50" y="148" width="100" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oRY-pb-bTg" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="158" width="100" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="slI-hB-nv8" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                        <rect key="frame" x="70" y="168" width="100" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="blE-s1-4y8" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="188" width="100" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g96-He-t0q" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                        <rect key="frame" x="100" y="198" width="100" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ngA-SY-SiX" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                        <rect key="frame" x="80" y="178" width="100" height="100"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uck-Ep-ODj" firstAttribute="top" secondItem="tYc-Gp-kVB" secondAttribute="top" id="EIn-qg-ejM"/>
+                            <constraint firstAttribute="trailing" secondItem="uck-Ep-ODj" secondAttribute="trailing" id="GF9-K5-SsR"/>
+                            <constraint firstItem="uck-Ep-ODj" firstAttribute="leading" secondItem="tYc-Gp-kVB" secondAttribute="leading" id="bbd-lG-HMj"/>
+                            <constraint firstItem="or1-7L-bFR" firstAttribute="top" secondItem="uck-Ep-ODj" secondAttribute="bottom" id="xNC-jF-W5F"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="8HS-Ae-Rt3"/>
+                    <connections>
+                        <outlet property="red" destination="Kg9-Om-hsD" id="6Pq-q4-0CO"/>
+                        <outlet property="red2" destination="Kg9-Om-hsD" id="NvG-ZY-WTC"/>
+                        <outletCollection property="reds" destination="Kg9-Om-hsD" collectionClass="NSMutableArray" id="amG-6G-GnG"/>
+                        <outletCollection property="reds" destination="Kz0-4z-F8T" collectionClass="NSMutableArray" id="13j-cV-ysC"/>
+                        <outletCollection property="reds" destination="aB5-3g-1kr" collectionClass="NSMutableArray" id="nWU-cB-VVN"/>
+                        <outletCollection property="reds" destination="Shu-9c-2Lt" collectionClass="NSMutableArray" id="2mt-qS-F5Q"/>
+                        <outletCollection property="reds" destination="tVM-KB-P2s" collectionClass="NSMutableArray" id="CMr-fC-5hB"/>
+                        <outletCollection property="reds" destination="OXR-9r-WS1" collectionClass="NSMutableArray" id="fP5-d2-WhW"/>
+                        <outletCollection property="reds" destination="oRY-pb-bTg" collectionClass="NSMutableArray" id="GvY-0m-7eI"/>
+                        <outletCollection property="reds" destination="slI-hB-nv8" collectionClass="NSMutableArray" id="MxB-b2-vvS"/>
+                        <outletCollection property="reds" destination="ngA-SY-SiX" collectionClass="NSMutableArray" id="lfI-Db-Qdu"/>
+                        <outletCollection property="reds" destination="blE-s1-4y8" collectionClass="NSMutableArray" id="nOb-GH-B9b"/>
+                        <outletCollection property="reds" destination="g96-He-t0q" collectionClass="NSMutableArray" id="mcq-Bm-iTb"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aPh-ip-GoO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1692" y="442"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="s5u-BR-Wh3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Yht-zv-lNn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4se-0L-vca">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="o6H-4V-xuG" kind="relationship" relationship="rootViewController" id="pHF-NE-dPw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BxR-Aq-v6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1010" y="442"/>
         </scene>
     </scenes>
 </document>
