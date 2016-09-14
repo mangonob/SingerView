@@ -40,10 +40,21 @@ class DWView: DWNodeView {
     }
     
     override func didMoveToSuperview() {
+        let map = [
+            UIColor.dwWaterBlueColor(),
+            UIColor.dwSaffronColor(),
+            UIColor.dwTealishColor(),
+            UIColor.dwLipstickColor(),
+            UIColor.dwWarmPurpleColor(),
+            UIColor.dwMediumGreenColor(),
+        ]
+        
         super.didMoveToSuperview()
         superview?.addSubview(associatePathView)
         superview?.insertSubview(associatePathView, belowSubview: self)
         associatePathView.backgroundColor = UIColor.blueColor().colorWithAlphaComponent(0.2)
+        associatePathView.strokeColor = map[Int(arc4random()) % map.count]
+        
         associatePathView.startPoint = CGPoint(x: 100, y: 100)
         associatePathView.endPoint = center
     }

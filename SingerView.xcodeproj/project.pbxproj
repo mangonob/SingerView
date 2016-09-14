@@ -11,13 +11,16 @@
 		789233CF1D87975E00C2F608 /* DWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789233CE1D87975E00C2F608 /* DWView.swift */; };
 		789233D91D87BFD600C2F608 /* DWPathLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789233D81D87BFD600C2F608 /* DWPathLayer.swift */; };
 		789233DD1D87D46600C2F608 /* DWNodeFrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789233DC1D87D46600C2F608 /* DWNodeFrameManager.swift */; };
-		78CB42BD1D75734B00B9D88B /* setting.png in Resources */ = {isa = PBXBuildFile; fileRef = 78CB42BC1D75734B00B9D88B /* setting.png */; };
 		78E0F11B1D62CB6400B42D75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E0F11A1D62CB6400B42D75 /* AppDelegate.swift */; };
 		78E0F11D1D62CB6400B42D75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E0F11C1D62CB6400B42D75 /* ViewController.swift */; };
 		78E0F1201D62CB6500B42D75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78E0F11E1D62CB6500B42D75 /* Main.storyboard */; };
 		78E0F1221D62CB6500B42D75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78E0F1211D62CB6500B42D75 /* Assets.xcassets */; };
 		78E0F1251D62CB6500B42D75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78E0F1231D62CB6500B42D75 /* LaunchScreen.storyboard */; };
 		78FA9DC41D828B89007503C2 /* DWNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA9DC31D828B89007503C2 /* DWNodeView.swift */; };
+		78FAF0A71D8920A100590798 /* reveal.png in Resources */ = {isa = PBXBuildFile; fileRef = 78FAF0A61D8920A100590798 /* reveal.png */; };
+		78FAF0A91D8922E700590798 /* DWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FAF0A81D8922E700590798 /* DWViewController.swift */; };
+		78FAF0AB1D8931CC00590798 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FAF0AA1D8931CC00590798 /* UIColor+.swift */; };
+		78FAF0AD1D893BDF00590798 /* DWTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FAF0AC1D893BDF00590798 /* DWTestView.swift */; };
 		DAA484838FF575872A92291E /* Pods_SingerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E23F1CEC9036246B1636241 /* Pods_SingerView.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +56,6 @@
 		789233CE1D87975E00C2F608 /* DWView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWView.swift; sourceTree = "<group>"; };
 		789233D81D87BFD600C2F608 /* DWPathLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWPathLayer.swift; sourceTree = "<group>"; };
 		789233DC1D87D46600C2F608 /* DWNodeFrameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWNodeFrameManager.swift; sourceTree = "<group>"; };
-		78CB42BC1D75734B00B9D88B /* setting.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = setting.png; sourceTree = "<group>"; };
 		78E0F1171D62CB6400B42D75 /* SingerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E0F11A1D62CB6400B42D75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78E0F11C1D62CB6400B42D75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +64,10 @@
 		78E0F1241D62CB6500B42D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		78E0F1261D62CB6500B42D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78FA9DC31D828B89007503C2 /* DWNodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWNodeView.swift; sourceTree = "<group>"; };
+		78FAF0A61D8920A100590798 /* reveal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reveal.png; sourceTree = "<group>"; };
+		78FAF0A81D8922E700590798 /* DWViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWViewController.swift; sourceTree = "<group>"; };
+		78FAF0AA1D8931CC00590798 /* UIColor+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		78FAF0AC1D893BDF00590798 /* DWTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,12 +116,15 @@
 				789233CE1D87975E00C2F608 /* DWView.swift */,
 				78FA9DC31D828B89007503C2 /* DWNodeView.swift */,
 				789233DC1D87D46600C2F608 /* DWNodeFrameManager.swift */,
+				78FAF0A81D8922E700590798 /* DWViewController.swift */,
+				78FAF0AC1D893BDF00590798 /* DWTestView.swift */,
 				782FFD221D868722001C03A5 /* DWPathView.swift */,
 				789233D81D87BFD600C2F608 /* DWPathLayer.swift */,
+				78FAF0AA1D8931CC00590798 /* UIColor+.swift */,
 				7883E6BE1D75214C00F2E51D /* Bridge.h */,
 				78E0F11E1D62CB6500B42D75 /* Main.storyboard */,
 				78E0F1211D62CB6500B42D75 /* Assets.xcassets */,
-				78CB42BC1D75734B00B9D88B /* setting.png */,
+				78FAF0A61D8920A100590798 /* reveal.png */,
 				78E0F1231D62CB6500B42D75 /* LaunchScreen.storyboard */,
 				78E0F1261D62CB6500B42D75 /* Info.plist */,
 			);
@@ -197,7 +206,7 @@
 				78E0F1251D62CB6500B42D75 /* LaunchScreen.storyboard in Resources */,
 				78E0F1221D62CB6500B42D75 /* Assets.xcassets in Resources */,
 				78E0F1201D62CB6500B42D75 /* Main.storyboard in Resources */,
-				78CB42BD1D75734B00B9D88B /* setting.png in Resources */,
+				78FAF0A71D8920A100590798 /* reveal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,10 +268,13 @@
 				78E0F11D1D62CB6400B42D75 /* ViewController.swift in Sources */,
 				78E0F11B1D62CB6400B42D75 /* AppDelegate.swift in Sources */,
 				782FFD231D868722001C03A5 /* DWPathView.swift in Sources */,
+				78FAF0A91D8922E700590798 /* DWViewController.swift in Sources */,
 				789233CF1D87975E00C2F608 /* DWView.swift in Sources */,
+				78FAF0AD1D893BDF00590798 /* DWTestView.swift in Sources */,
 				78FA9DC41D828B89007503C2 /* DWNodeView.swift in Sources */,
 				789233D91D87BFD600C2F608 /* DWPathLayer.swift in Sources */,
 				789233DD1D87D46600C2F608 /* DWNodeFrameManager.swift in Sources */,
+				78FAF0AB1D8931CC00590798 /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +390,7 @@
 			baseConfigurationReference = 21972A35C71346ACC739E62D /* Pods-SingerView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -397,6 +410,7 @@
 			baseConfigurationReference = 578D20BFA164388323BA072E /* Pods-SingerView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

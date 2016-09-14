@@ -17,14 +17,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="setting.png" translatesAutoresizingMaskIntoConstraints="NO" id="8qF-w6-JOT">
-                                <rect key="frame" x="262" y="265" width="77" height="71"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" image="reveal.png" translatesAutoresizingMaskIntoConstraints="NO" id="VRS-qD-HO1">
+                                <rect key="frame" x="230" y="215" width="140" height="170"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="170" id="KOf-Jj-KaU"/>
+                                    <constraint firstAttribute="width" constant="140" id="vT1-dC-es2"/>
+                                </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="8qF-w6-JOT" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="4w3-9a-zaZ"/>
-                            <constraint firstItem="8qF-w6-JOT" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="95Q-Cb-qt2"/>
+                            <constraint firstItem="VRS-qD-HO1" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Dgd-hF-jts"/>
+                            <constraint firstItem="VRS-qD-HO1" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="fLh-ow-00t"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -34,6 +38,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="setting.png" width="77" height="71"/>
+        <image name="reveal.png" width="349" height="426"/>
     </resources>
 </document>
