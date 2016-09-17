@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AAE19861D8D9A35009EDF9F /* DWGrowingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE19851D8D9A35009EDF9F /* DWGrowingTextView.swift */; };
 		782FFD231D868722001C03A5 /* DWPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782FFD221D868722001C03A5 /* DWPathView.swift */; };
 		789233CF1D87975E00C2F608 /* DWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789233CE1D87975E00C2F608 /* DWView.swift */; };
 		789233D91D87BFD600C2F608 /* DWPathLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789233D81D87BFD600C2F608 /* DWPathLayer.swift */; };
@@ -18,9 +19,7 @@
 		78E0F1251D62CB6500B42D75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78E0F1231D62CB6500B42D75 /* LaunchScreen.storyboard */; };
 		78FA9DC41D828B89007503C2 /* DWNodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FA9DC31D828B89007503C2 /* DWNodeView.swift */; };
 		78FAF0A71D8920A100590798 /* reveal.png in Resources */ = {isa = PBXBuildFile; fileRef = 78FAF0A61D8920A100590798 /* reveal.png */; };
-		78FAF0A91D8922E700590798 /* DWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FAF0A81D8922E700590798 /* DWViewController.swift */; };
 		78FAF0AB1D8931CC00590798 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FAF0AA1D8931CC00590798 /* UIColor+.swift */; };
-		78FAF0AD1D893BDF00590798 /* DWTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FAF0AC1D893BDF00590798 /* DWTestView.swift */; };
 		DAA484838FF575872A92291E /* Pods_SingerView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E23F1CEC9036246B1636241 /* Pods_SingerView.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		21972A35C71346ACC739E62D /* Pods-SingerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingerView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SingerView/Pods-SingerView.debug.xcconfig"; sourceTree = "<group>"; };
+		4AAE19851D8D9A35009EDF9F /* DWGrowingTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWGrowingTextView.swift; sourceTree = "<group>"; };
 		4E23F1CEC9036246B1636241 /* Pods_SingerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		578D20BFA164388323BA072E /* Pods-SingerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingerView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SingerView/Pods-SingerView.release.xcconfig"; sourceTree = "<group>"; };
 		782FFD221D868722001C03A5 /* DWPathView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWPathView.swift; sourceTree = "<group>"; };
@@ -65,9 +65,7 @@
 		78E0F1261D62CB6500B42D75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78FA9DC31D828B89007503C2 /* DWNodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWNodeView.swift; sourceTree = "<group>"; };
 		78FAF0A61D8920A100590798 /* reveal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reveal.png; sourceTree = "<group>"; };
-		78FAF0A81D8922E700590798 /* DWViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWViewController.swift; sourceTree = "<group>"; };
 		78FAF0AA1D8931CC00590798 /* UIColor+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
-		78FAF0AC1D893BDF00590798 /* DWTestView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWTestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,11 +111,10 @@
 			children = (
 				78E0F11A1D62CB6400B42D75 /* AppDelegate.swift */,
 				78E0F11C1D62CB6400B42D75 /* ViewController.swift */,
+				4AAE19851D8D9A35009EDF9F /* DWGrowingTextView.swift */,
 				789233CE1D87975E00C2F608 /* DWView.swift */,
 				78FA9DC31D828B89007503C2 /* DWNodeView.swift */,
 				789233DC1D87D46600C2F608 /* DWNodeFrameManager.swift */,
-				78FAF0A81D8922E700590798 /* DWViewController.swift */,
-				78FAF0AC1D893BDF00590798 /* DWTestView.swift */,
 				782FFD221D868722001C03A5 /* DWPathView.swift */,
 				789233D81D87BFD600C2F608 /* DWPathLayer.swift */,
 				78FAF0AA1D8931CC00590798 /* UIColor+.swift */,
@@ -177,6 +174,7 @@
 				TargetAttributes = {
 					78E0F1161D62CB6400B42D75 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = RXLA5TBA2W;
 					};
 				};
 			};
@@ -268,10 +266,9 @@
 				78E0F11D1D62CB6400B42D75 /* ViewController.swift in Sources */,
 				78E0F11B1D62CB6400B42D75 /* AppDelegate.swift in Sources */,
 				782FFD231D868722001C03A5 /* DWPathView.swift in Sources */,
-				78FAF0A91D8922E700590798 /* DWViewController.swift in Sources */,
 				789233CF1D87975E00C2F608 /* DWView.swift in Sources */,
-				78FAF0AD1D893BDF00590798 /* DWTestView.swift in Sources */,
 				78FA9DC41D828B89007503C2 /* DWNodeView.swift in Sources */,
+				4AAE19861D8D9A35009EDF9F /* DWGrowingTextView.swift in Sources */,
 				789233D91D87BFD600C2F608 /* DWPathLayer.swift in Sources */,
 				789233DD1D87D46600C2F608 /* DWNodeFrameManager.swift in Sources */,
 				78FAF0AB1D8931CC00590798 /* UIColor+.swift in Sources */,
@@ -391,6 +388,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -401,6 +399,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mangonob.SingerView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = SingerView/Bridge.h;
 			};
 			name = Debug;
@@ -411,6 +410,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -421,6 +421,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = mangonob.SingerView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = SingerView/Bridge.h;
 			};
 			name = Release;
