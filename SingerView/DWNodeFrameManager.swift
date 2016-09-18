@@ -8,8 +8,7 @@
 
 import UIKit
 
-private let NODE_FRAME_MARGIN = 8
-
+private let MAX_HEIGHT_OF_IAMGE: CGFloat = 200
 
 class DWNodeFrameManager: NSObject {
     let HAND_LENGTH = 100
@@ -24,50 +23,72 @@ class DWNodeFrameManager: NSObject {
     var parent: DWNodeView? { get { return node.parent } }
     var childs: [DWNodeView]? { get { return node.childs } }
     
+    var NODE_FRAME_MARGIN: CGFloat {
+        return node.style == .Line ? 0 : 10
+    }
+    
     var depth: Int {
         guard let parent = parent else { return 0 }
         return parent.frameManager.depth + 1
     }
     
-    var font = UIFont.systemFontOfSize(24)
     var textContainerInset = UITextView().textContainerInset
+    var attributeText: NSAttributedString?
+    var textWidth = CGFloat.max
+    var image: UIImage?
     
-    var imageFrame: CGRect? {
-        let contentRect = CGRectInset(node.bounds, 8, 8)
-        
+    var textFrame: CGRect? {
+        if attributeText == nil || attributeText == "" {
+            return nil
+        }
         return nil
     }
     
-//    var leftTop: CGFloat {
-//        get {
-//            
-//            guard let lastLeft = childs?.filter({ (nnn) -> Bool in
-//                return nnn.direction == .Left
-//            }).last else { return 0 }
-//            
-//            return lastLeft.frame.origin.y
-//        }
-//    }
+    var imageFrame: CGRect? {
+        guard let image = image else { return nil }
+        guard let textFrame = textFrame else { return CGRectInset(node.bounds, NODE_FRAME_MARGIN, NODE_FRAME_MARGIN) }
+        return nil
+    }
     
-//    var leftBottom: CGFloat {
-//        get {
-//            guard let firstLeft = childs?.filter({ (node) -> Bool in
-//                return node.direction == .Left
-//            }).first else { return 0 }
-//            
-//            return firstLeft.frame.origin.y + firstLeft.frame.height
-//        }
-//    }
-//    
-//    var rightBottom: CGFloat {
-//        get {
-//            guard let firstRight = childs?.filter({ (node) -> Bool in
-//                return node.direction == .Left
-//            }).first else { return 0 }
-//            
-//            return firstRight.frame.origin.y + firstRight.frame.height
-//        }
-//    }
+    func openText() {
+    }
+    
+    func initFrameByTextView(textView: UITextView?) {
+        guard let textView = textView else { return }
+        textView.text = ""
+        node.frame = CGRect(origin: CGPointZero, size: CGRectInset(textView.bounds, NODE_FRAME_MARGIN, NODE_FRAME_MARGIN).size)
+    }
+    
+    //    var leftTop: CGFloat {
+    //        get {
+    //
+    //            guard let lastLeft = childs?.filter({ (nnn) -> Bool in
+    //                return nnn.direction == .Left
+    //            }).last else { return 0 }
+    //
+    //            return lastLeft.frame.origin.y
+    //        }
+    //    }
+    
+    //    var leftBottom: CGFloat {
+    //        get {
+    //            guard let firstLeft = childs?.filter({ (node) -> Bool in
+    //                return node.direction == .Left
+    //            }).first else { return 0 }
+    //
+    //            return firstLeft.frame.origin.y + firstLeft.frame.height
+    //        }
+    //    }
+    //
+    //    var rightBottom: CGFloat {
+    //        get {
+    //            guard let firstRight = childs?.filter({ (node) -> Bool in
+    //                return node.direction == .Left
+    //            }).first else { return 0 }
+    //
+    //            return firstRight.frame.origin.y + firstRight.frame.height
+    //        }
+    //    }
     
     
     var anchorA: CGPoint {
