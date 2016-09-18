@@ -8,8 +8,12 @@
 
 import UIKit
 
+private let NODE_FRAME_MARGIN = 8
+
+
 class DWNodeFrameManager: NSObject {
-    var node: DWNodeView!
+    let HAND_LENGTH = 100
+    weak var node: DWNodeView!
     
     //MARK: - Init
     init(node: DWNodeView) {
@@ -21,10 +25,17 @@ class DWNodeFrameManager: NSObject {
     var childs: [DWNodeView]? { get { return node.childs } }
     
     var depth: Int {
-        get {
-            guard let parent = parent else { return 0 }
-            return parent.frameManager.depth + 1
-        }
+        guard let parent = parent else { return 0 }
+        return parent.frameManager.depth + 1
+    }
+    
+    var font = UIFont.systemFontOfSize(24)
+    var textContainerInset = UITextView().textContainerInset
+    
+    var imageFrame: CGRect? {
+        let contentRect = CGRectInset(node.bounds, 8, 8)
+        
+        return nil
     }
     
 //    var leftTop: CGFloat {

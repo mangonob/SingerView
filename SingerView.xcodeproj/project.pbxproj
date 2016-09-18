@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4AAE19861D8D9A35009EDF9F /* DWGrowingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE19851D8D9A35009EDF9F /* DWGrowingTextView.swift */; };
+		782BE3311D8E38F5005AF7AB /* CGRect+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782BE3301D8E38F5005AF7AB /* CGRect+.swift */; };
+		782BE3331D8E57C4005AF7AB /* DWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782BE3321D8E57C4005AF7AB /* DWViewController.swift */; };
 		782FFD231D868722001C03A5 /* DWPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782FFD221D868722001C03A5 /* DWPathView.swift */; };
 		789233CF1D87975E00C2F608 /* DWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789233CE1D87975E00C2F608 /* DWView.swift */; };
 		789233D91D87BFD600C2F608 /* DWPathLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789233D81D87BFD600C2F608 /* DWPathLayer.swift */; };
@@ -51,6 +53,8 @@
 		4AAE19851D8D9A35009EDF9F /* DWGrowingTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWGrowingTextView.swift; sourceTree = "<group>"; };
 		4E23F1CEC9036246B1636241 /* Pods_SingerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		578D20BFA164388323BA072E /* Pods-SingerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingerView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SingerView/Pods-SingerView.release.xcconfig"; sourceTree = "<group>"; };
+		782BE3301D8E38F5005AF7AB /* CGRect+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+.swift"; sourceTree = "<group>"; };
+		782BE3321D8E57C4005AF7AB /* DWViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWViewController.swift; sourceTree = "<group>"; };
 		782FFD221D868722001C03A5 /* DWPathView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWPathView.swift; sourceTree = "<group>"; };
 		7883E6BE1D75214C00F2E51D /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		789233CE1D87975E00C2F608 /* DWView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWView.swift; sourceTree = "<group>"; };
@@ -111,6 +115,7 @@
 			children = (
 				78E0F11A1D62CB6400B42D75 /* AppDelegate.swift */,
 				78E0F11C1D62CB6400B42D75 /* ViewController.swift */,
+				782BE3321D8E57C4005AF7AB /* DWViewController.swift */,
 				4AAE19851D8D9A35009EDF9F /* DWGrowingTextView.swift */,
 				789233CE1D87975E00C2F608 /* DWView.swift */,
 				78FA9DC31D828B89007503C2 /* DWNodeView.swift */,
@@ -119,6 +124,7 @@
 				789233D81D87BFD600C2F608 /* DWPathLayer.swift */,
 				78FAF0AA1D8931CC00590798 /* UIColor+.swift */,
 				7883E6BE1D75214C00F2E51D /* Bridge.h */,
+				782BE3301D8E38F5005AF7AB /* CGRect+.swift */,
 				78E0F11E1D62CB6500B42D75 /* Main.storyboard */,
 				78E0F1211D62CB6500B42D75 /* Assets.xcassets */,
 				78FAF0A61D8920A100590798 /* reveal.png */,
@@ -174,7 +180,6 @@
 				TargetAttributes = {
 					78E0F1161D62CB6400B42D75 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = RXLA5TBA2W;
 					};
 				};
 			};
@@ -267,11 +272,13 @@
 				78E0F11B1D62CB6400B42D75 /* AppDelegate.swift in Sources */,
 				782FFD231D868722001C03A5 /* DWPathView.swift in Sources */,
 				789233CF1D87975E00C2F608 /* DWView.swift in Sources */,
+				782BE3331D8E57C4005AF7AB /* DWViewController.swift in Sources */,
 				78FA9DC41D828B89007503C2 /* DWNodeView.swift in Sources */,
 				4AAE19861D8D9A35009EDF9F /* DWGrowingTextView.swift in Sources */,
 				789233D91D87BFD600C2F608 /* DWPathLayer.swift in Sources */,
 				789233DD1D87D46600C2F608 /* DWNodeFrameManager.swift in Sources */,
 				78FAF0AB1D8931CC00590798 /* UIColor+.swift in Sources */,
+				782BE3311D8E38F5005AF7AB /* CGRect+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +404,7 @@
 				INFOPLIST_FILE = SingerView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mangonob.SingerView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mangonob;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = SingerView/Bridge.h;
@@ -419,7 +426,7 @@
 				INFOPLIST_FILE = SingerView/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = mangonob.SingerView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mangonob;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = SingerView/Bridge.h;

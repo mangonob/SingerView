@@ -13,11 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var red: UIView!
     @IBOutlet weak var red2: DWView!
-    
-    
-    
     @IBOutlet var reds: [DWView]!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +21,7 @@ class ViewController: UIViewController {
     
     var flag = false
     @IBAction func action(sender: AnyObject) {
+        print(UITextView().textContainerInset)
         DWPathView.animateWithDuration(0.3) {
             self.reds.forEach({ (node) in
 //                node.center = CGPoint(x: 100, y: 100)

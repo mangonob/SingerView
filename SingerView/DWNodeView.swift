@@ -21,6 +21,27 @@ public enum DWNodeStatus {
 }
 
 class DWNodeView: UIView {
+    //MARK: - Init
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        configure()
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: CGRectZero)
+        configure()
+    }
+    
+    init() {
+        super.init(frame: CGRectZero)
+        configure()
+    }
+    
+    //MARK: - Configure
+    func configure() {
+        frameManager = DWNodeFrameManager(node: self)
+    }
+    
     private var lineLayer: CAShapeLayer?
     
     lazy var associatePathView = DWPathView()
@@ -29,6 +50,12 @@ class DWNodeView: UIView {
     
     var style: DWNodeStyle = .Line {
         didSet {
+        }
+    }
+    
+    var image: UIImage? {
+        didSet {
+            setNeedsDisplay()
         }
     }
     
@@ -51,6 +78,11 @@ class DWNodeView: UIView {
     var childs: [DWNodeView]?
     
     var frameManager: DWNodeFrameManager!
+    
+    //MARK: - UIView
+    override func drawRect(rect: CGRect) {
+        print(bounds)
+    }
     
     private func clearToInitialView() {
         layer.borderColor = UIColor.clearColor().CGColor
@@ -79,78 +111,6 @@ class DWNodeView: UIView {
 
 
 
-
-
-enum DWRectAnchorPosition {
-    case Left, Right, Top, Bottom, LeftTop, RightTop, LeftBottom, RightBottom
-}
-
-extension CGRect {
-    var left: CGFloat {
-        get {
-            return origin.x
-        }
-        set {
-            origin.x = newValue
-        }
-    }
-    
-    var right: CGFloat {
-        get {
-            return origin.x + size.width
-        }
-        set {
-            origin.x = newValue - size.width
-        }
-    }
-    
-    var top: CGFloat {
-        get {
-            return origin.y
-        }
-        set {
-            origin.y = newValue
-        }
-    }
-    
-    var bottom: CGFloat {
-        get {
-            return origin.y + size.height
-        }
-        set {
-            origin.y = newValue - size.height
-        }
-    }
-    
-    var center: CGPoint {
-        get {
-            return CGPoint(x: CGRectGetMidX(self), y: CGRectGetMidY(self))
-        }
-        set {
-            self = CGRectOffset(self, newValue.x - center.x, newValue.y - center.y)
-        }
-    }
-    
-    mutating func top(delta: CGFloat) {
-        top = top + delta
-    }
-    
-    mutating func bottom(delta: CGFloat) {
-        bottom = bottom + delta
-    }
-    
-    mutating func left(delta: CGFloat) {
-        left = left + delta
-    }
-    
-    mutating func right(delta: CGFloat) {
-        right = right + delta
-    }
-    
-    func getAnchor(position: DWRectAnchorPosition) {
-        
-    }
-}
 
 
 

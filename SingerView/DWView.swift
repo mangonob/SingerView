@@ -20,13 +20,14 @@ class DWView: DWNodeView {
         configure()
     }
     
-    init() {
+    override init() {
         super.init(frame: CGRectZero)
         configure()
     }
     
     //MARK: - Configure
-    func configure() {
+    override func configure() {
+        super.configure()
         let pan = UIPanGestureRecognizer(target: self, action: #selector(gestureAction(_:)))
         addGestureRecognizer(pan)
     }
@@ -53,7 +54,7 @@ class DWView: DWNodeView {
         superview?.addSubview(associatePathView)
         superview?.insertSubview(associatePathView, belowSubview: self)
         associatePathView.backgroundColor = UIColor.blueColor().colorWithAlphaComponent(0.2)
-        associatePathView.strokeColor = map[Int(arc4random()) % map.count]
+        associatePathView.strokeColor = map[random() % map.count]
         
         associatePathView.startPoint = CGPoint(x: 100, y: 100)
         associatePathView.endPoint = center

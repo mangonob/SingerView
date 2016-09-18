@@ -26,7 +26,7 @@ class DWGrowingTextView: UITextView {
         NSNotificationCenter.defaultCenter().removeObserver(self, name: UITextViewTextDidChangeNotification, object: self)
     }
     
-    var placeholder = "Placeholder" {
+    var placeholder = "" {
         didSet {
             placeholderView.text = placeholder
         }
@@ -43,6 +43,12 @@ class DWGrowingTextView: UITextView {
         }
     }
     
+    //MARK: - UIView
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        textChanged(nil)
+    }
+    
     // MARK: - Action 
     func textChanged(notification: NSNotification?) {
         placeholderView.hidden = !(NSString(string: text).length == 0)
@@ -53,14 +59,12 @@ class DWGrowingTextView: UITextView {
         scrollEnabled = height > maxHeight
         showsVerticalScrollIndicator = scrollEnabled
         
-        if !scrollEnabled {
-            var oldFrame = frame
-            if growingDirection == .Up {
-                oldFrame = CGRectOffset(oldFrame, 0, oldFrame.height - min(maxHeight, height))
-            }
-            oldFrame.size.height = min(maxHeight, height)
-            frame = oldFrame
+        var oldFrame = frame
+        if growingDirection == .Up {
+            oldFrame = CGRectOffset(oldFrame, 0, oldFrame.height - min(maxHeight, height))
         }
+        oldFrame.size.height = min(maxHeight, height)
+        frame = oldFrame
     }
     
     func loadComponent() {
@@ -80,6 +84,10 @@ class DWGrowingTextView: UITextView {
     // MARK: - Configure
     func configure() {
         loadComponent()
+        
+        // disable Autolayout
+        translatesAutoresizingMaskIntoConstraints = true
+        
         layer.cornerRadius = 5
         layer.borderWidth = 1
         layer.borderColor = UIColor.grayColor().CGColor

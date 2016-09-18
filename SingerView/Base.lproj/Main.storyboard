@@ -1,83 +1,76 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="unA-89-xrB">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8Sv-NK-jYV">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="5yE-8S-yhI">
             <objects>
                 <viewController id="o6H-4V-xuG" customClass="ViewController" customModule="SingerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dng-1l-ihb"/>
+                        <viewControllerLayoutGuide type="bottom" id="VIS-L1-p1V"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tYc-Gp-kVB">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="uck-Ep-ODj" userLabel="Container One">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uck-Ep-ODj" userLabel="Container One">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gWb-xw-txu">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWb-xw-txu">
                                         <rect key="frame" x="27" y="433" width="46" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button"/>
                                         <connections>
                                             <action selector="action:" destination="o6H-4V-xuG" eventType="touchUpInside" id="YKf-z6-zwe"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" id="Kg9-Om-hsD" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kg9-Om-hsD" customClass="DWView" customModule="SingerView" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="98" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.43745583295822144" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="Kz0-4z-F8T" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kz0-4z-F8T" customClass="DWView" customModule="SingerView" customModuleProvider="target">
                                         <rect key="frame" x="10" y="108" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="aB5-3g-1kr" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aB5-3g-1kr" customClass="DWView" customModule="SingerView" customModuleProvider="target">
                                         <rect key="frame" x="20" y="118" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="Shu-9c-2Lt" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Shu-9c-2Lt" customClass="DWView" customModule="SingerView" customModuleProvider="target">
                                         <rect key="frame" x="30" y="128" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="tVM-KB-P2s" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tVM-KB-P2s" customClass="DWView" customModule="SingerView" customModuleProvider="target">
                                         <rect key="frame" x="40" y="138" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="OXR-9r-WS1" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OXR-9r-WS1" customClass="DWView" customModule="SingerView" customModuleProvider="target">
                                         <rect key="frame" x="50" y="148" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="oRY-pb-bTg" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oRY-pb-bTg" customClass="DWView" customModule="SingerView" customModuleProvider="target">
                                         <rect key="frame" x="60" y="158" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="slI-hB-nv8" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="slI-hB-nv8" customClass="DWView" customModule="SingerView" customModuleProvider="target">
                                         <rect key="frame" x="70" y="168" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="blE-s1-4y8" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="blE-s1-4y8" customClass="DWView" customModule="SingerView" customModuleProvider="target">
                                         <rect key="frame" x="90" y="188" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="g96-He-t0q" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="g96-He-t0q" customClass="DWView" customModule="SingerView" customModuleProvider="target">
                                         <rect key="frame" x="100" y="198" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="ngA-SY-SiX" customClass="DWView" customModule="SingerView" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ngA-SY-SiX" customClass="DWView" customModule="SingerView" customModuleProvider="target">
                                         <rect key="frame" x="80" y="178" width="100" height="100"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.0" blue="0.43745583300000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
@@ -85,6 +78,12 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.99989169836044312" green="1" blue="0.99988096952438354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VIS-L1-p1V" firstAttribute="top" secondItem="uck-Ep-ODj" secondAttribute="bottom" id="9RH-6H-zqb"/>
+                            <constraint firstAttribute="trailing" secondItem="uck-Ep-ODj" secondAttribute="trailing" id="A0r-hK-Gnn"/>
+                            <constraint firstItem="uck-Ep-ODj" firstAttribute="top" secondItem="tYc-Gp-kVB" secondAttribute="top" id="eTu-mK-XTT"/>
+                            <constraint firstItem="uck-Ep-ODj" firstAttribute="leading" secondItem="tYc-Gp-kVB" secondAttribute="leading" id="j0b-NX-XhY"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8HS-Ae-Rt3"/>
                     <connections>
@@ -105,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aPh-ip-GoO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="902.39999999999998" y="418.42666666666668"/>
+            <point key="canvasLocation" x="1692" y="442"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="s5u-BR-Wh3">
@@ -123,30 +122,87 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BxR-Aq-v6p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="462.93333333333334" y="418.42666666666668"/>
+            <point key="canvasLocation" x="880" y="442"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="CPQ-ba-4BB">
+        <scene sceneID="hDb-eh-BGo">
             <objects>
-                <viewController id="unA-89-xrB" customClass="ViewController" customModule="SingerView" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ZhI-QK-HAa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YEY-6w-odm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="oOV-2c-MmE">
+                    <connections>
+                        <action selector="longPressGesture:" destination="8Sv-NK-jYV" id="PYC-df-BR4"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <viewController id="8Sv-NK-jYV" customClass="DWViewController" customModule="SingerView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hhx-Ki-ueF"/>
+                        <viewControllerLayoutGuide type="bottom" id="IW1-6e-Jre"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XjH-ui-fSa">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="mangonob@163.com" textAlignment="center" id="2id-8O-NEv" customClass="DWGrowingTextView" customModule="SingerView" customModuleProvider="target">
-                                <rect key="frame" x="20" y="65" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WYI-4s-jpt">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.5" maximumZoomScale="2" translatesAutoresizingMaskIntoConstraints="NO" id="hWS-J5-C66">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NM5-cO-bnO">
+                                        <rect key="frame" x="0.0" y="0.0" width="1200" height="1200"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59x-KN-y7y">
+                                                <rect key="frame" x="550" y="550" width="100" height="100"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="WKX-P9-Tia"/>
+                                                    <constraint firstAttribute="width" constant="100" id="x5i-zO-NP9"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="59x-KN-y7y" firstAttribute="centerX" secondItem="NM5-cO-bnO" secondAttribute="centerX" id="Thg-Xd-OCJ"/>
+                                            <constraint firstItem="59x-KN-y7y" firstAttribute="centerY" secondItem="NM5-cO-bnO" secondAttribute="centerY" id="jFB-z6-QrW"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="oOV-2c-MmE" appends="YES" id="pWj-Ya-fR2"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="NM5-cO-bnO" firstAttribute="height" secondItem="hWS-J5-C66" secondAttribute="height" multiplier="2" id="8o4-45-747"/>
+                                    <constraint firstAttribute="trailing" secondItem="NM5-cO-bnO" secondAttribute="trailing" id="JKa-K4-vOj"/>
+                                    <constraint firstAttribute="bottom" secondItem="NM5-cO-bnO" secondAttribute="bottom" id="MPY-zb-e3y"/>
+                                    <constraint firstItem="NM5-cO-bnO" firstAttribute="leading" secondItem="hWS-J5-C66" secondAttribute="leading" id="mcX-eP-mxm"/>
+                                    <constraint firstItem="NM5-cO-bnO" firstAttribute="width" secondItem="hWS-J5-C66" secondAttribute="width" multiplier="2" id="rqA-k4-s97"/>
+                                    <constraint firstItem="NM5-cO-bnO" firstAttribute="top" secondItem="hWS-J5-C66" secondAttribute="top" id="w9b-dg-2ew"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IW1-6e-Jre" firstAttribute="top" secondItem="WYI-4s-jpt" secondAttribute="bottom" id="J3x-pz-mxM"/>
+                            <constraint firstItem="WYI-4s-jpt" firstAttribute="top" secondItem="XjH-ui-fSa" secondAttribute="topMargin" id="Mg9-Nd-Z2r"/>
+                            <constraint firstAttribute="trailing" secondItem="WYI-4s-jpt" secondAttribute="trailing" id="TmP-uY-xi0"/>
+                            <constraint firstItem="WYI-4s-jpt" firstAttribute="leading" secondItem="XjH-ui-fSa" secondAttribute="leading" id="atw-MP-FRh"/>
+                            <constraint firstItem="hWS-J5-C66" firstAttribute="top" secondItem="XjH-ui-fSa" secondAttribute="top" id="fIb-0d-UFA"/>
+                            <constraint firstAttribute="trailing" secondItem="hWS-J5-C66" secondAttribute="trailing" id="iuY-Ac-O1s"/>
+                            <constraint firstItem="hWS-J5-C66" firstAttribute="leading" secondItem="XjH-ui-fSa" secondAttribute="leading" id="pPY-t0-2mR"/>
+                            <constraint firstItem="IW1-6e-Jre" firstAttribute="top" secondItem="hWS-J5-C66" secondAttribute="bottom" id="vnc-Kl-GJT"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="container" destination="NM5-cO-bnO" id="8gh-jy-p6U"/>
+                        <outlet property="mview" destination="WYI-4s-jpt" id="44A-yY-dod"/>
+                        <outlet property="redview" destination="59x-KN-y7y" id="bOy-FO-Lrk"/>
+                        <outlet property="scrollView" destination="hWS-J5-C66" id="Zpc-lC-R33"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ree-dz-xNG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="505.59999999999997" y="1049.8533333333332"/>
+            <point key="canvasLocation" x="966" y="1097"/>
         </scene>
     </scenes>
 </document>
