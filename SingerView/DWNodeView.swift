@@ -39,29 +39,57 @@ class DWNodeView: UIView {
     
     //MARK: - Configure
     func configure() {
+        translatesAutoresizingMaskIntoConstraints = true
+        
         frameManager = DWNodeFrameManager(node: self)
+        style = .Rectangle
+        
+        // About line layer to show node border
+        layer.addSublayer(lineLayer)
+        lineLayer.fillColor = UIColor.clearColor().CGColor
+        lineLayer.strokeColor = color.CGColor
+        lineLayer.lineWidth = 6
+        lineLayer.lineCap = kCALineCapRound
+        lineLayer.lineJoin = kCALineJoinRound
+        // end line layer to show node border
     }
     
-    private var lineLayer: CAShapeLayer?
+    var depth: Int {
+        guard let parent = parent else { return 0 }
+        return parent.depth + 1
+    }
     
-    lazy var associatePathView = DWPathView()
+    private lazy var lineLayer = CAShapeLayer()
     
-    var color: UIColor = UIColor.blackColor()
-    
-    var style: DWNodeStyle = .Line {
-        didSet {
+    private var _associatePathView: DWPathView?
+    var associatePathView: DWPathView? {
+        if depth == 0 {
+            return nil
+        } else {
+            if _associatePathView == nil {
+                _associatePathView = DWPathView()
+            }
+            return _associatePathView
         }
     }
     
-    var image: UIImage? {
+    
+    var color: UIColor = UIColor.blackColor() {
         didSet {
-            setNeedsDisplay()
+            lineLayer.strokeColor = color.CGColor
         }
     }
+    
+    var style: DWNodeStyle = .Line { didSet { updateLineLayer() } }
     
     override var frame: CGRect {
         didSet {
-            associatePathView.endPoint = center
+            if center.x > associatePathView?.startPoint.x {
+                associatePathView?.endPoint = frameManager?.A ?? CGPointZero
+            } else {
+                associatePathView?.endPoint = frameManager?.B ?? CGPointZero
+            }
+            updateLineLayer()
         }
     }
     
@@ -77,13 +105,23 @@ class DWNodeView: UIView {
     var parent: DWNodeView?
     var childs: [DWNodeView]?
     
-    var frameManager: DWNodeFrameManager!
+    var frameManager: DWNodeFrameManager?
     
     //MARK: - UIView
     override func drawRect(rect: CGRect) {
-        print(bounds)
+        if let textFrame = frameManager?.textFrame, attributeText = frameManager?.attributeText {
+            attributeText.drawInRect(textFrame)
+        }
+        if let imageFrame = frameManager?.imageFrame, image = frameManager?.image {
+            image.drawInRect(imageFrame)
+        }
     }
     
+    override func didMoveToSuperview() {
+        super.didMoveToSuperview()
+        updateLineLayer()
+    }
+
     private func clearToInitialView() {
         layer.borderColor = UIColor.clearColor().CGColor
         layer.borderWidth = 0
@@ -93,12 +131,53 @@ class DWNodeView: UIView {
     func refresh() {
     }
     
+    func updateLineLayer() {
+        guard let frameManager = frameManager else { return }
+        if depth == 0 {
+            // Main Node
+            self.color = UIColor.clearColor()
+            // Main Node
+        }
+        
+        let A = convertPoint(frameManager.A, fromView: superview)
+        let B = convertPoint(frameManager.B, fromView: superview)
+        
+        var path = UIBezierPath()
+        layer.masksToBounds = true
+        backgroundColor = UIColor.whiteColor()
+        
+        switch style {
+        case .Line:
+            layer.masksToBounds = false
+            if depth != 0 {
+                backgroundColor = UIColor.clearColor()
+            }
+            path.moveToPoint(A)
+            path.addLineToPoint(B)
+            break
+        case .Rectangle:
+            path = UIBezierPath(rect: bounds)
+            layer.cornerRadius = 0
+            break
+        case .RoundRectangle:
+            let radius = min(max(5, max(bounds.height, bounds.width) * 0.15), 10)
+            path = UIBezierPath(roundedRect: bounds, cornerRadius: radius)
+            layer.cornerRadius = radius
+            break
+        case .VeryRoundRectangle:
+            path = UIBezierPath(roundedRect: bounds, cornerRadius: min(bounds.height, bounds.width) / 2)
+            layer.cornerRadius = min(bounds.height, bounds.width) / 2
+            break
+        }
+        associatePathView?.endPoint = center.x > associatePathView?.startPoint.x ? frameManager.A : frameManager.B
+        lineLayer.path = path.CGPath
+    }
     //MARK: - About Modify
     func insert(index: UInt) {
     }
     
     func remove() {
-        associatePathView.removeFromSuperview()
+        associatePathView?.removeFromSuperview()
     }
     
     func swap() {

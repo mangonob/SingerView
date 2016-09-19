@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		4AAE19861D8D9A35009EDF9F /* DWGrowingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAE19851D8D9A35009EDF9F /* DWGrowingTextView.swift */; };
 		782BE3311D8E38F5005AF7AB /* CGRect+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782BE3301D8E38F5005AF7AB /* CGRect+.swift */; };
-		782BE3331D8E57C4005AF7AB /* DWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782BE3321D8E57C4005AF7AB /* DWViewController.swift */; };
 		782FFD231D868722001C03A5 /* DWPathView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782FFD221D868722001C03A5 /* DWPathView.swift */; };
+		787C36661D8FAA0200898550 /* DWNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787C36651D8FAA0200898550 /* DWNotificationManager.swift */; };
 		789233CF1D87975E00C2F608 /* DWView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789233CE1D87975E00C2F608 /* DWView.swift */; };
 		789233D91D87BFD600C2F608 /* DWPathLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789233D81D87BFD600C2F608 /* DWPathLayer.swift */; };
 		789233DD1D87D46600C2F608 /* DWNodeFrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789233DC1D87D46600C2F608 /* DWNodeFrameManager.swift */; };
+		78DBC8671D8F718A00342C31 /* DWArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78DBC8661D8F718A00342C31 /* DWArchiveView.swift */; };
 		78E0F11B1D62CB6400B42D75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E0F11A1D62CB6400B42D75 /* AppDelegate.swift */; };
 		78E0F11D1D62CB6400B42D75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E0F11C1D62CB6400B42D75 /* ViewController.swift */; };
 		78E0F1201D62CB6500B42D75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78E0F11E1D62CB6500B42D75 /* Main.storyboard */; };
@@ -54,12 +55,13 @@
 		4E23F1CEC9036246B1636241 /* Pods_SingerView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SingerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		578D20BFA164388323BA072E /* Pods-SingerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SingerView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SingerView/Pods-SingerView.release.xcconfig"; sourceTree = "<group>"; };
 		782BE3301D8E38F5005AF7AB /* CGRect+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+.swift"; sourceTree = "<group>"; };
-		782BE3321D8E57C4005AF7AB /* DWViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWViewController.swift; sourceTree = "<group>"; };
 		782FFD221D868722001C03A5 /* DWPathView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWPathView.swift; sourceTree = "<group>"; };
+		787C36651D8FAA0200898550 /* DWNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWNotificationManager.swift; sourceTree = "<group>"; };
 		7883E6BE1D75214C00F2E51D /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
 		789233CE1D87975E00C2F608 /* DWView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWView.swift; sourceTree = "<group>"; };
 		789233D81D87BFD600C2F608 /* DWPathLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWPathLayer.swift; sourceTree = "<group>"; };
 		789233DC1D87D46600C2F608 /* DWNodeFrameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWNodeFrameManager.swift; sourceTree = "<group>"; };
+		78DBC8661D8F718A00342C31 /* DWArchiveView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DWArchiveView.swift; sourceTree = "<group>"; };
 		78E0F1171D62CB6400B42D75 /* SingerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SingerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78E0F11A1D62CB6400B42D75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		78E0F11C1D62CB6400B42D75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,11 +117,12 @@
 			children = (
 				78E0F11A1D62CB6400B42D75 /* AppDelegate.swift */,
 				78E0F11C1D62CB6400B42D75 /* ViewController.swift */,
-				782BE3321D8E57C4005AF7AB /* DWViewController.swift */,
 				4AAE19851D8D9A35009EDF9F /* DWGrowingTextView.swift */,
+				78DBC8661D8F718A00342C31 /* DWArchiveView.swift */,
 				789233CE1D87975E00C2F608 /* DWView.swift */,
 				78FA9DC31D828B89007503C2 /* DWNodeView.swift */,
 				789233DC1D87D46600C2F608 /* DWNodeFrameManager.swift */,
+				787C36651D8FAA0200898550 /* DWNotificationManager.swift */,
 				782FFD221D868722001C03A5 /* DWPathView.swift */,
 				789233D81D87BFD600C2F608 /* DWPathLayer.swift */,
 				78FAF0AA1D8931CC00590798 /* UIColor+.swift */,
@@ -272,9 +275,10 @@
 				78E0F11B1D62CB6400B42D75 /* AppDelegate.swift in Sources */,
 				782FFD231D868722001C03A5 /* DWPathView.swift in Sources */,
 				789233CF1D87975E00C2F608 /* DWView.swift in Sources */,
-				782BE3331D8E57C4005AF7AB /* DWViewController.swift in Sources */,
 				78FA9DC41D828B89007503C2 /* DWNodeView.swift in Sources */,
+				78DBC8671D8F718A00342C31 /* DWArchiveView.swift in Sources */,
 				4AAE19861D8D9A35009EDF9F /* DWGrowingTextView.swift in Sources */,
+				787C36661D8FAA0200898550 /* DWNotificationManager.swift in Sources */,
 				789233D91D87BFD600C2F608 /* DWPathLayer.swift in Sources */,
 				789233DD1D87D46600C2F608 /* DWNodeFrameManager.swift in Sources */,
 				78FAF0AB1D8931CC00590798 /* UIColor+.swift in Sources */,

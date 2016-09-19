@@ -51,13 +51,16 @@ class DWView: DWNodeView {
         ]
         
         super.didMoveToSuperview()
-        superview?.addSubview(associatePathView)
-        superview?.insertSubview(associatePathView, belowSubview: self)
-        associatePathView.backgroundColor = UIColor.blueColor().colorWithAlphaComponent(0.2)
-        associatePathView.strokeColor = map[random() % map.count]
-        
-        associatePathView.startPoint = CGPoint(x: 100, y: 100)
-        associatePathView.endPoint = center
+        if let associatePathView = associatePathView {
+            superview?.addSubview(associatePathView)
+            superview?.insertSubview(associatePathView, belowSubview: self)
+            associatePathView.backgroundColor = UIColor.blueColor().colorWithAlphaComponent(0.2)
+            associatePathView.strokeColor = map[random() % map.count]
+            color = associatePathView.strokeColor
+            
+            associatePathView.startPoint = CGPoint(x: 100, y: 100)
+            associatePathView.endPoint = frameManager!.A
+        }
     }
 }
 
