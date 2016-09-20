@@ -34,7 +34,12 @@ class DWGrowingTextView: UITextView {
     
     var growingDirection = DWGrowingTextViewGrowingDirection.Down
     var placeholderColor = UIColor.lightGrayColor()
-    var maxLine = 5
+    
+    var minWidth: CGFloat = 30 { didSet { textChanged(nil) } }
+    var maxWidth: CGFloat = 200 { didSet { textChanged(nil) } }
+    
+    var maxLine = Int.max
+    
     lazy var placeholderView = UITextView()
     
     override var font: UIFont? {
@@ -53,7 +58,16 @@ class DWGrowingTextView: UITextView {
     func textChanged(notification: NSNotification?) {
         placeholderView.hidden = !(NSString(string: text).length == 0)
         
-        let height = ceil(sizeThatFits(CGSize(width: frame.width, height: CGFloat.max)).height)
+        let length = ceil(attributedText.boundingRectWithSize(CGSize(width: CGFloat.max, height: CGFloat.max), options: [.UsesFontLeading, .UsesLineFragmentOrigin], context: nil).width)
+        var width = length + textContainerInset.left + textContainerInset.right
+        
+        if width < minWidth {
+            width = minWidth
+        } else if width > maxWidth {
+            width = maxWidth
+        }
+        
+        let height = ceil(sizeThatFits(CGSize(width: width, height: CGFloat.max)).height)
         let maxHeight = font!.lineHeight * CGFloat(maxLine) + textContainerInset.top + textContainerInset.bottom
         
         scrollEnabled = height > maxHeight
@@ -64,6 +78,7 @@ class DWGrowingTextView: UITextView {
             oldFrame = CGRectOffset(oldFrame, 0, oldFrame.height - min(maxHeight, height))
         }
         oldFrame.size.height = min(maxHeight, height)
+        oldFrame.size.width = width
         frame = oldFrame
     }
     
@@ -85,12 +100,32 @@ class DWGrowingTextView: UITextView {
     func configure() {
         loadComponent()
         
+        
         // disable Autolayout
         translatesAutoresizingMaskIntoConstraints = true
         
-        layer.cornerRadius = 5
+        
+        // Fix the padding
+        var inset = textContainerInset
+        inset.left = textContainer.lineFragmentPadding
+        inset.right = textContainer.lineFragmentPadding
+        textContainerInset = inset
+        textContainer.lineFragmentPadding = 0
+        // Fix End
+        
+        textAlignment = .Center
+        
+        subviews.filter { (view) -> Bool in
+            return !(view is UITextView)
+        }.first?.layoutMargins = UIEdgeInsetsZero
+        
+        print(subviews.filter { (view) -> Bool in
+            return !(view is UITextView)
+        }.first?.layoutMargins)
+        
+        layer.cornerRadius = 0
         layer.borderWidth = 1
-        layer.borderColor = UIColor.grayColor().CGColor
+        layer.borderColor = UIColor.lightGrayColor().CGColor
         
         scrollEnabled = false
         showsVerticalScrollIndicator = false
